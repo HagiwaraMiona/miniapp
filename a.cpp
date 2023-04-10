@@ -4,6 +4,7 @@ int main()
     int i, j, k;
     int a=0;
     int  s=1;
+    printf ("输出 %d \n",a  );
     printf("可能分配情况如下：\n");
     for( i=0; i <= 100; i++ )
         for( j=0; j <= 100; j++ )
