@@ -62,6 +62,7 @@ int main()
         cout << stringStack.top() << std::endl; 
         stringStack.pop(); 
         stringStack.pop(); 
+        
     } 
     catch (exception const& ex) { 
         cerr << "Exception: " << ex.what() <<endl; 
