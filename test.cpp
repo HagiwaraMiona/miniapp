@@ -65,10 +65,10 @@ int main()
         cout << stringStack.top() << std::endl; 
         stringStack.pop(); 
         stringStack.pop(); 
-        printf ("a");
     } 
     catch (exception const& ex) { 
         cerr << "Exception: " << ex.what() <<endl; 
         return -1;
     } 
+    putchar (a);
 }
