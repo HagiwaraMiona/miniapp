@@ -5,6 +5,7 @@
 #include <stdexcept>
  
 using namespace std;
+
  
 template <class T>
 class Stack { 
@@ -19,7 +20,7 @@ class Stack {
         return elems.empty(); 
     } 
 }; 
- 
+
 template <class T>
 void Stack<T>::push (T const& elem) 
 { 
@@ -49,10 +50,12 @@ T Stack<T>::top () const
  
 int main() 
 { 
+    char a;
+    a=getchar();
     try { 
         Stack<int>         intStack;  // int 类型的栈 
         Stack<string> stringStack;    // string 类型的栈 
- 
+
         // 操作 int 类型的栈 
         intStack.push(7); 
         cout << intStack.top() <<endl; 
@@ -62,7 +65,7 @@ int main()
         cout << stringStack.top() << std::endl; 
         stringStack.pop(); 
         stringStack.pop(); 
-        
+        printf ("a");
     } 
     catch (exception const& ex) { 
         cerr << "Exception: " << ex.what() <<endl; 
