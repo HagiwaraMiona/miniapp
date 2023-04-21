@@ -52,6 +52,7 @@ int main()
 { 
     char a;
     a=getchar();
+    char b;
     try { 
         Stack<int>         intStack;  // int 类型的栈 
         Stack<string> stringStack;    // string 类型的栈 
