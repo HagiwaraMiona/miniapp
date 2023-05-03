@@ -10,7 +10,7 @@ using namespace std;
 template <class T>
 class Stack { 
   private: 
-    vector<T> elems;     // 元素 
+    vector<T> elems;     // 元素  
  
   public: 
     void push(T const&);  // 入栈
@@ -52,10 +52,9 @@ int main()
 { 
     char a;
     a=getchar();
-    char b;
     try { 
         Stack<int>         intStack;  // int 类型的栈 
-        Stack<string> stringStack;    // string 类型的栈 
+        Stack<string> stringStack;    // string 类型的栈  
 
         // 操作 int 类型的栈 
         intStack.push(7); 
@@ -66,7 +65,7 @@ int main()
         cout << stringStack.top() << std::endl; 
         stringStack.pop(); 
         stringStack.pop(); 
-    }
+    } 
     catch (exception const& ex) { 
         cerr << "Exception: " << ex.what() <<endl; 
         return -1;
