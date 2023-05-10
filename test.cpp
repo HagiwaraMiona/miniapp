@@ -63,9 +63,9 @@ int main()
         // 操作 string 类型的栈 
         stringStack.push("hello"); 
         cout << stringStack.top() << std::endl; 
-        stringStack.pop(); 
-        stringStack.pop(); 
+        stringStack.pop();    //String类型的栈
         stringStack.pop();
+        stringStack.push("aaa");
     } 
     catch (exception const& ex) { 
         cerr << "Exception: " << ex.what() <<endl; 
