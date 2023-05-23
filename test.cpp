@@ -72,6 +72,5 @@ int main()
         return -1;
     } 
     putchar (a);
-    putchar (a);
     return 0;
 }
