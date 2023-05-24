@@ -6,7 +6,7 @@ double y, x, z;
 printf("那一天\n");
 printf("第一次遇见你\n");
 printf("忘不了\n");
-printf("小傻瓜，你的容颜\n");//赶快将小傻瓜改成你喜欢人的名字发出去吧；
+printf("小傻瓜，你的容颜\n");
 printf("若轻云之蔽月,如流风之回雪\n");
 printf("\n\n\n");
 printf("其实\n");
@@ -25,3 +25,4 @@ printf("\n");
 }
 getchar();
 }
+
