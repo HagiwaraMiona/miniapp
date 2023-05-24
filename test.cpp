@@ -1,76 +1,27 @@
-#include <iostream>
-#include <vector>
-#include <cstdlib>
-#include <string>
-#include <stdexcept>
- 
-using namespace std;
-
- 
-template <class T>
-class Stack { 
-  private: 
-    vector<T> elems;     // 元素  
- 
-  public: 
-    void push(T const&);  // 入栈
-    void pop();               // 出栈
-    T top() const;            // 返回栈顶元素
-    bool empty() const{       // 如果为空则返回真。
-        return elems.empty(); 
-    } 
-}; 
-
-template <class T>
-void Stack<T>::push (T const& elem) 
-{ 
-    // 追加传入元素的副本
-    elems.push_back(elem);    
-} 
- 
-template <class T>
-void Stack<T>::pop () 
-{ 
-    if (elems.empty()) { 
-        throw out_of_range("Stack<>::pop(): empty stack"); 
-    }
-    // 删除最后一个元素
-    elems.pop_back();         
-} 
- 
-template <class T>
-T Stack<T>::top () const 
-{ 
-    if (elems.empty()) { 
-        throw out_of_range("Stack<>::top(): empty stack"); 
-    }
-    // 返回最后一个元素的副本 
-    return elems.back();      
-} 
- 
-int main() 
-{ 
-    char a;
-    a=getchar();
-    try { 
-        Stack<int>         intStack;  // int 类型的栈 
-        Stack<string> stringStack;    // string 类型的栈  
-
-        // 操作 int 类型的栈 
-        intStack.push(7); 
-        cout << intStack.top() <<endl; 
- 
-        // 操作 string 类型的栈 
-        stringStack.push("hello"); 
-        cout << stringStack.top() << std::endl; 
-        stringStack.pop();    //String类型的栈
-        stringStack.pop();
-        stringStack.push("aaa");
-    } 
-    catch (exception const& ex) { 
-        cerr << "Exception: " << ex.what() <<endl; 
-        return -1;
-    } 
-    putchar (a);
-    return 0;
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+double y, x, z;
+printf("那一天\n");
+printf("第一次遇见你\n");
+printf("忘不了\n");
+printf("小傻瓜，你的容颜\n");//赶快将小傻瓜改成你喜欢人的名字发出去吧；
+printf("若轻云之蔽月,如流风之回雪\n");
+printf("\n\n\n");
+printf("其实\n");
+printf("有一句话\n");
+printf("我一直想对你说:\n");
+for ( y = 2.5; y >= -1.6; y = y - 0.2)
+{
+for ( x = -3; x <= 4.8; x = x + 0.1)
+{
+(pow((x*x + y*y - 1), 3) <= 3.6*x*x*y*y*y
+|| (x>-2.4 && x<-2.1 && y<1.5 && y>-1)
+|| (((x<2.5 && x>2.2) || (x>3.4 && x<3.7)) && y>-1 && y<1.5)
+|| (y>-1 && y<-0.6 && x<3.7 && x>2.2)) ? printf("*") : printf(" ");
+}
+printf("\n");
+}
+getchar();
 }
